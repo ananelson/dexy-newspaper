@@ -1,0 +1,32 @@
+This is a LaTeX-based template for creating a newspaper suitable for printing
+via newspaperclub.co.uk
+
+http://www.newspaperclub.com/help
+http://www.newspaperclub.com/help/paper-sizes
+http://www.newspaperclub.com/help/digital-colour-printing (for printing up to 300 copies)
+http://www.newspaperclub.com/help/traditional-colour-printing (for printing more than 300 copies)
+
+This template uses the sciposter class to create a very large page. You need to
+set the custom paper size in your texlive install, I have found this file in
+locations such as:
+
+/usr/local/texlive/2010/texmf-dist/tex/latex/sciposter/papercustom.cfg
+/usr/share/texmf-texlive/tex/latex/sciposter/papercustom.cfg
+
+You can try running "find /usr -name papercustom.cfg" to locate this file on
+your installation.
+
+\renewcommand{\papertype}{custom}
+\renewcommand{\fontpointsize}{14pt}
+\setlength{\paperwidth}{28.9cm}
+\setlength{\paperheight}{38.0cm}
+\renewcommand{\setpspagesize}{
+  \ifthenelse{\equal{\orientation}{portrait}}{
+    \special{papersize=28.9cm,38.0cm}
+    }{\special{papersize=38.0cm,28.9cm}
+    }
+  }
+
+Note that in our document, we have margins set to:
+
+\setmargins[1.5cm]
