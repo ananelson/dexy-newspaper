@@ -1,0 +1,27 @@
+{
+    "*.py|idio|l": {},
+    "*.sh|pyg|l": {},
+    ".dexy": {},
+    "001.c|c": {},
+    "001.c|pyg|l": {},
+    "dexy-source.py|fn|py": {},
+    "dexy.sh|bash": {},
+    "example.dot": {},
+    "example.dot|dot|p": {},
+    "garlicsim_prisoner.py|fn|pycon|pyg|l": {
+        "record-vars": true
+    },
+    "hello.R": {},
+    "hello.R|r": {},
+    "hello.R|r|pyg|l": {},
+    "newspaper.tex|fn|jinja|latex": {
+        "allinputs": true
+    },
+    "newspaper.tex|wrap|pyg|l": {},
+    "prisoner.R|fn|r|pyg|l": {
+        "inputs": [
+            "garlicsim_prisoner.py|fn|pycon|pyg|l"
+        ],
+        "record-vars": true
+    }
+}

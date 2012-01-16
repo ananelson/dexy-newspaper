@@ -1,0 +1,13 @@
+digraph hello {
+	rankdir=LR;
+	node [ shape = point ];
+	ENTRY;
+	en_1;
+	node [ shape = circle, height = 0.2 ];
+	node [ fixedsize = true, height = 0.65, shape = doublecircle ];
+	2;
+	node [ shape = circle ];
+	1 -> 2 [ label = "104 / 4:18" ];
+	ENTRY -> 1 [ label = "IN" ];
+	en_1 -> 1 [ label = "main" ];
+}
